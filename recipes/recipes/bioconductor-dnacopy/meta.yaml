@@ -1,0 +1,25 @@
+package:
+  name: bioconductor-dnacopy
+  version: 1.48.0
+source:
+  fn: DNAcopy_1.48.0.tar.gz
+  url: https://bioarchive.galaxyproject.org/DNAcopy_1.48.0.tar.gz
+  md5: eed4c37ca52d413dae49ed15a760d03d
+build:
+  number: 0
+  rpaths:
+    - lib/R/lib/
+    - lib/
+requirements:
+  build:
+    - r-base
+  run:
+    - r-base
+test:
+  commands:
+    - '$R -e "library(''DNAcopy'')"'
+about:
+  home: http://bioconductor.org/packages/release/bioc/html/DNAcopy.html
+  license: 'GPL (>= 2)'
+  summary: 'Implements the circular binary segmentation (CBS) algorithm to segment
+    DNA copy number data and identify genomic regions with abnormal copy number.'
