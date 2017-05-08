@@ -1,0 +1,49 @@
+package:
+  name: bioconductor-oligoclasses
+  version: 1.38.0
+source:
+  fn: oligoClasses_1.38.0.tar.gz
+  url: https://bioarchive.galaxyproject.org/oligoClasses_1.38.0.tar.gz
+  md5: 957614de4cd41421f98d04b7dc04c31b
+build:
+  number: 0
+  rpaths:
+    - lib/R/lib/
+    - lib/
+requirements:
+  build:
+    - 'bioconductor-affyio >=1.23.2'
+    - 'bioconductor-biobase >=2.17.8'
+    - 'bioconductor-biocgenerics >=0.3.2'
+    - bioconductor-biocinstaller
+    - 'bioconductor-biostrings >=2.23.6'
+    - 'bioconductor-genomicranges >=1.23.7'
+    - 'bioconductor-iranges >=2.5.17'
+    - 'bioconductor-s4vectors >=0.9.25'
+    - bioconductor-summarizedexperiment
+    - r-base
+    - r-ff
+    - r-foreach
+    - r-rsqlite
+  run:
+    - 'bioconductor-affyio >=1.23.2'
+    - 'bioconductor-biobase >=2.17.8'
+    - 'bioconductor-biocgenerics >=0.3.2'
+    - bioconductor-biocinstaller
+    - 'bioconductor-biostrings >=2.23.6'
+    - 'bioconductor-genomicranges >=1.23.7'
+    - 'bioconductor-iranges >=2.5.17'
+    - 'bioconductor-s4vectors >=0.9.25'
+    - bioconductor-summarizedexperiment
+    - r-base
+    - r-ff
+    - r-foreach
+    - r-rsqlite
+test:
+  commands:
+    - '$R -e "library(''oligoClasses'')"'
+about:
+  home: http://bioconductor.org/packages/release/bioc/html/oligoClasses.html
+  license: 'GPL (>= 2)'
+  summary: 'This package contains class definitions, validity checks, and initialization
+    methods for classes used by the oligo and crlmm packages.'
