@@ -31,4 +31,4 @@ test:
 about:
   home: http://bioconductor.org/packages/release/data/annotation/html/FDb.InfiniumMethylation.hg19.html
   license: Artistic-2.0
-  summary: 'Compiled HumanMethylation27 and HumanMethylation450 annotations'
+summary: 'Compiled HumanMethylation27 and HumanMethylation450 annotations'
