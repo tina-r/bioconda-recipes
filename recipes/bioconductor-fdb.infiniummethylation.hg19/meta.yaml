@@ -30,6 +30,5 @@ test:
     - $R -e "library('FDb.InfiniumMethylation.hg19')"
 about:
   home: http://bioconductor.org/packages/release/data/annotation/html/FDb.InfiniumMethylation.hg19.html
-  license: Artistic-2.0
-  license_file: LICENSE
-summary: 'Compiled HumanMethylation27 and HumanMethylation450 annotations'
+  license: Artistic-2.0  license_file: LICENSE
+summary: Compiled HumanMethylation27 and HumanMethylation450 annotations
